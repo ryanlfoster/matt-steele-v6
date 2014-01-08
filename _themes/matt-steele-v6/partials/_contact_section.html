@@ -1,0 +1,86 @@
+<div class="home-contact-section section-line" id="contact-section">
+	<div class="wrapper main">
+	
+		<h2 class="home-section-title">Contact <span class="red">//</span></h2>
+	{{ if raven:success }}
+		<h1>BOOM BABY!</h1>
+	{{ endif }}
+	{{ if ! raven:success }}					
+		
+				{{ raven:errors }}
+				<div class="pal mvl mll red-background">
+				<h1 class="text-error pbn">It looks like you have some errors</h1>
+				<p class="text-error ptn">(annoying, I know)</p>
+				<p class="text-error">Your first name, last name, email address and a message are all required.</p>
+				<hr/>
+				<p class="text-error">Fix the following errors and then try re-sending your message:</p>				
+				
+						{{ missing }}
+							<p class="text-error">This field must have content: {{ field }}</p>
+						{{ /missing }}
+						
+						{{ invalid }}
+							<p class="text-error">This field has an invalid format: {{ field }}: {{ message }}</p>
+						{{ /invalid }}		
+						
+							
+				</div> <!--/ pal mvl background-white -->
+				{{ /raven:errors }}
+
+		{{ endif }}		
+
+
+	{{ raven:form formset="contact_form" }}
+		
+      <fieldset>
+      <div class="form-wrapper">
+          <h4 class="input-label">Name:</h4>
+          
+		<div class="group">
+			<div class="left size1of2">
+				<p>        
+					<label class="input-sub-label" for="first_name">First</label>
+					<input class="split-input-half" name="first_name" type="text" id="first_name" placeholder="First Name" />
+				</p>
+			</div> <!--/ left size1of2 -->
+		
+			<div class="right size1of2">
+				<p>
+					<label class="input-sub-label" for="last_name">Last</label>
+					<input class="split-input-half" name="last_name" type="text" id="last_name" placeholder="Last Name" />
+				</p>
+			</div> <!--/ right size1of2 -->
+		</div> <!--/ group-->
+ 
+	<div class="group">
+
+		<div class="left size1of2">
+			<p>
+				<label class="input-label" for="company_name">Company Name:</label>
+				<input class="split-input-half" name="company_name" type="text" id="company_name" placeholder="Company Name" />
+			</p>
+		</div> <!--/ left size1of2 -->
+	
+	<div class="right size1of2">
+			<p>
+				<label class="input-label" for="email">Email:</label>
+				<input class="split-input-half" name="email" type="email" id="email" placeholder="janedoe@email.com"/>
+			</p>
+		</div> <!--/ right size1of2 -->		
+	</div> <!--/ group -->
+
+<p>
+	<label class="input-label" for="message">Message:</label>
+	<textarea id="message" name="message" class="split-input-whole"></textarea>
+</p>
+<p>
+	<label for="submit"></label>
+	<input class="submit-button right" name="submit" type="submit" id="submit" placeholder="Send" />
+</p>
+</div><!--/ form-wrapper-->
+      </fieldset>
+
+{{ /raven:form }}
+	</div><!--/ wrapper-->
+	
+</div> <!--/ home-contact-section section-line-->

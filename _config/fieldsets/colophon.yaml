@@ -1,0 +1,17 @@
+title: Colophon Page
+include: meta                  # include the meta fields
+
+fields:
+  colophon_content: 
+   display: Colophon Content 
+   type: ckeditor
+    
+### This will cancel out the default content field from displaying, 
+### thus allowing me to reorder the fields
+	content: 
+		display: Page Content 
+		required: false
+		default: special
+		type: hidden
+
+hide: true

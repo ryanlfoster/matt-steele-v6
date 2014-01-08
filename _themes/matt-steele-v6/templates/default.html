@@ -1,0 +1,139 @@
+{{# This page outputs the blog listing page at /blog #}}	
+
+{{ if segment_1=='colophon'}}
+	{{ theme:partial src="_colophon" }}
+{{ endif }}
+
+{{ if segment_1=='styleguide'}}
+	{{ theme:partial src="_styleguide" }}
+{{ endif }}
+
+{{ if segment_1=='blog'}}
+	<div id="primary_content">
+	 
+	<div class="blog-listing-section" id="blog-section">
+		<div class="wrapper main group">
+			
+			<div class="right interior-right-size">
+<h2 class="home-section-title">{{ title }} <span class="red">//</span></h2>
+
+{{ entries:listing 
+	show_future="yes" 
+	folder="blog" 
+	limit="5"
+	paginate="true" 
+}}
+<div class="blog-listing-wrapper group">
+	<h2 class="blog-listing-title"><a href="{{ url }}">{{ title }}</a></h2>
+	<h4 class="blog-post-date"><i>{{ date }}</i></h4>
+{{ truncate:words limit="50" ending="" }} 
+
+	{ blog_content }
+
+{{ /truncate:words }}
+
+<p class="continue-reading"><a href="{{ url }}">Continue >></a></p>	
+</div> <!--/ blog-listing-wrapper group-->
+{{ /entries:listing }}		
+
+
+{{ entries:pagination
+	show_future="yes" 
+	folder="blog" 
+	limit="5"
+	paginate="true" 
+}}
+<div class="pagination-wrapper">
+<nav class="pagination" role="navigation">
+{{ if previous_page }}
+		<a class="prev" href="{{ previous_page }}">Prev</a>
+		{{ endif }}
+		 {{ if previous_page }}
+    <span>Page {{ current_page }} of {{ total_pages }}</span>
+    {{ else }}
+    <span>Page {{ current_page }} of {{ total_pages }}</span>
+    {{ endif }}
+    {{ if next_page }}
+		<a class="next" href="{{ next_page }}">Next</a>
+		{{ endif }}
+	</nav>
+</div> <!--/ pagination-wrapper-->
+{{ /entries:pagination }}
+
+	{{#	This isn't possible in Statamic yet
+	
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a class="active" href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6</a>
+		<a href="#">7</a> #}}
+
+			</div> <!--/ right interior-listing-page-->
+			
+			<div class="left interior-left-size">
+			
+			<h2 class="blog-sidebar-title">Recent Articles</h2>
+		<ul class="blog-side-nav">
+			{{ entries:listing 
+				show_future="yes" 
+				folder="blog" 
+				limit="15"
+			}}
+				<li><a href="{{ url }}">{{ title }}</a></li>
+			{{ /entries:listing }}
+		</ul>
+			
+	{{#		
+		Turning this off for now until there's a better solution
+		other than 'group_by_date'
+	<h2 class="blog-sidebar-title">Archives</h2>
+			
+				<ul class="blog-side-nav">
+					<li><a href="">January 2013</a></li>
+					<li><a href="">February 2013</a></li>
+					<li><a href="">March 2013</a></li>
+					<li><a href="">April 2013</a></li>
+					<li><a href="">May 2013</a></li>
+					<li><a href="">June 2013</a></li>
+					<li><a href="">July 2013</a></li>
+					<li><a href="">August 2013</a></li>
+					<li><a href="">September 2013</a></li>
+					<li><a href="">October 2013</a></li>
+					<li><a href="">November 2013</a></li>
+					<li><a href="">December 2013</a></li>
+				</ul>
+				#}}
+			</div>
+	</div> <!--/ wrapper main-->	
+			
+	</div> <!--/ blog-listing-section section-line-->
+		
+	{{ theme:partial src="_author_section" }}
+		
+	{{ theme:partial src="_social_section" }}
+	
+	{{ theme:partial src="_contact_section" }}
+</div> <!--/ main-->
+
+{{ endif }}
+
+{{# 
+====================================
+  NOTES
+====================================
+
+This is the default template (required), if you choose to not specify a template in your front matter, Statamic uses the following template hierarchy:
+
+If present: post.html
+Otherwise, if present: default.html
+Otherwise: 404.html
+
+See http://statamic.com/learn/core-concepts/how-pages-are-built for more information.
+
+This template is using the articles template partial with a variable which sets
+the limit (number of posts to display). Change the lim="5" variable to however many
+posts you would like to display.
+  
+#}}

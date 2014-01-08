@@ -1,0 +1,84 @@
+{{# This outputs the single blog post at /blog/title-of-post #}}
+
+	<div id="primary_content">
+	
+	<div class="blog-single-section" id="blog-section">
+		<div class="wrapper main group">
+			
+			<div class="right interior-right-size">
+			<h2 class="home-section-title">Blog <span class="red">//</span></h2>
+{{ entries:listing 
+	show_future="yes" 
+	folder="blog" 
+	limit="1"
+}}
+			<div class="blog-single-wrapper group">
+			
+			<h2 class="blog-single-title"><a href="{{ rul }}">{{ title }}</a></h2>
+			<h4 class="blog-post-date"><i>{{ date }}</i></h4>
+			
+{{ blog_content }}
+	{{ /entries:listing }}	
+</div> <!--/ blog-single-wrapper group-->
+
+			</div> <!--/ right interior-single-page-->
+			
+			<div class="left interior-left-size">
+			
+			<h2 class="blog-sidebar-title">Recent Articles</h2>
+		<ul class="blog-side-nav">
+			{{ entries:listing 
+				show_future="yes" 
+				folder="blog" 
+				limit="15"
+			}}
+				<li><a href="{{ url }}">{{ title }}</a></li>
+			{{ /entries:listing }}
+		</ul>
+			
+	{{#		
+		Turning this off for now until there's a better solution
+		other than 'group_by_date'
+	<h2 class="blog-sidebar-title">Archives</h2>
+			
+				<ul class="blog-side-nav">
+					<li><a href="">January 2013</a></li>
+					<li><a href="">February 2013</a></li>
+					<li><a href="">March 2013</a></li>
+					<li><a href="">April 2013</a></li>
+					<li><a href="">May 2013</a></li>
+					<li><a href="">June 2013</a></li>
+					<li><a href="">July 2013</a></li>
+					<li><a href="">August 2013</a></li>
+					<li><a href="">September 2013</a></li>
+					<li><a href="">October 2013</a></li>
+					<li><a href="">November 2013</a></li>
+					<li><a href="">December 2013</a></li>
+				</ul>
+				#}}
+			</div>
+	</div> <!--/ wrapper main-->	
+			
+</div> <!--/ blog-single-section section-line-->
+	
+	{{ theme:partial src="_author_section" }}
+		
+	{{ theme:partial src="_social_section" }}
+	
+	{{ theme:partial src="_contact_section" }}
+	</div> <!--/ main-->
+
+{{# 
+====================================
+  NOTES
+====================================
+
+If you choose to not specify a template in your front matter, Statamic uses the following template hierarchy:
+
+If present: post.html
+Otherwise, if present: default.html
+Otherwise: 404.html
+
+See http://statamic.com/learn/core-concepts/how-pages-are-built for more information.
+  
+#}}

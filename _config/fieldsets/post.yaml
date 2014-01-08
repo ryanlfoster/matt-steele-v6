@@ -1,0 +1,33 @@
+include: meta                  # include the meta fields
+hide: true
+
+fields:
+  title:
+    instructions: "Enter the main article title here."
+
+  main_section:
+    type: section
+    display: Main Content
+    instructions: "Enter your main article content here."
+
+  status:
+    display: Status
+    type: status
+    
+  blog_content:
+    display: Blog Article
+    type: ckeditor
+    image_dir: assets/img/blog  #make sure the folder exists and is writable
+    instructions:
+      below: "Add the blog article content here."
+
+
+### This will cancel out the default content field from displaying, 
+### thus allowing me to reorder the fields
+	content: 
+		display: Page Content 
+		required: false
+		default: special
+		type: hidden
+
+hide: true

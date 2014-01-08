@@ -1,0 +1,60 @@
+{{ if segment_1=="" }}		
+		<nav class="nav" id="primary-nav" role="navigation">
+      <p class="menu-link nav-toggle"><a>Open Navigation</a></p>
+			<ul>
+        <li class="active-nav"><a href="{{ homepage }}">Home</a></li>
+        <li> // </li>
+				<li><a id="work-clicker" href="{{ current_url }}#work-section">Work</a></li>
+        <li> // </li>
+        <li><a href="/blog">Blog</a></li>
+        <li> // </li>
+        <li><a id="contact-clicker" href="{{ current_url }}#contact-section">Contact</a></li>
+			</ul>
+		</nav>
+{{ endif }}
+
+{{ if segment_1=="blog" }}		
+		<nav class="nav" id="primary-nav" role="navigation">
+      <p class="menu-link nav-toggle"><a>Open Navigation</a></p>
+			<ul>
+        <li class="active-nav"><a href="{{ homepage }}">Home</a></li>
+        <li> // </li>
+				<li><a id="work-clicker" href="{{ homepage }}#work-section">Work</a></li>
+        <li> // </li>
+        <li><a href="/blog">Blog</a></li>
+        <li> // </li>
+        <li><a id="contact-clicker" href="{{ current_url }}#contact-section">Contact</a></li>
+			</ul>
+		</nav>
+{{ endif }}
+
+
+
+{{# <nav role="navigation">
+  <ul>
+    <li><a href="{{ homepage }}"{{ if !segment_1 }} class="current"{{ endif }}>Home</a></li>
+    {{ nav from="/" max_depth="2" }}
+    <li>
+      <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ endif }}>{{ title }}</a>
+      {{ if children }}
+      <ul>
+        {{ children }}
+        <li><a href="{{ url }}"{{ if is_current }} class="current"{{ endif }}>{{ title }}</a></li>
+        {{ /children }}
+      </ul>
+      {{ endif }}
+    </li>
+    {{ /nav }}
+  </ul>
+</nav>#}}
+
+{{# 
+====================================
+  NOTES
+====================================
+
+This is the main nav partial.
+
+It uses the nav tag to render a list of navigation items. For more information on the nav tag see http://statamic.com/learn/documentation/tags/nav.
+  
+#}}

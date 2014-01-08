@@ -1,0 +1,30 @@
+allowed:
+  - first_name
+  - last_name
+  - company_name
+  - email
+  - message
+
+required:
+  - first_name
+  - last_name
+  - email
+  - message
+
+validate:
+  first_name: alpha
+  last_name: alpha
+  email: email
+  message: notEmpty
+
+messages:
+  first_name: "Names need to be letters"
+  last_name: "Names need to be letters"
+  email: "The email address you entered does not match a normal email format"
+  message: "Your message must contain some text"
+
+email:
+  from: "{{ email }}"
+  to: matt@matt-steele.com
+  subject: "Contact Form Submitted"
+  automagic: true

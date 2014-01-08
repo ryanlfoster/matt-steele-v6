@@ -1,0 +1,35 @@
+<header class="header" role="banner" id="header">
+
+<div class="top-header">
+    <div class="wrapper">
+    <div class="header-title">
+      <a href="<?php echo $site_url; ?>">
+    		<a href="{{ _site_url }}">
+    		<h1>{{ _site_name }}</h1>
+        <h2>Web Developer</h2>
+        </a>
+    </div> <!--/ header-title-->
+  </div> <!--/ wrapper group-->
+</div> <!--/ top-header-->
+
+<div class="sub-header">
+  <div class="wrapper group main">
+  
+   {{ theme:partial src="_nav" }}
+
+    </div> <!--/ wrapper group-->
+   </div> <!--/ sub-header-->
+
+</header> <!--/ header-->
+
+
+{{# 
+====================================
+  NOTES
+====================================
+
+This is the main header partial.
+
+For more information on partials see http://statamic.com/learn/theming/partials.
+  
+#}}

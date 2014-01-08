@@ -1,0 +1,28 @@
+###########################################################################################
+#
+#  THEME VARIABLES
+#
+###########################################################################################
+
+# Theme name
+theme_name: Matt Steele v6
+
+# Theme Tag Line
+#tag_line: "A bare-bones Statamic theme"
+
+# Comments + Disqus
+disqus_account: changeme
+show_comments: no
+
+# Blog
+blog_name: blog
+
+# Global text snippets
+no_results_text: "Sorry, no results found."
+
+# Site Description
+site_desc: "Matt Steele - Front-end Web Developer"
+
+# Contact Details
+contact_name: Matt Steele
+contact_email: matt@matt-steele.com

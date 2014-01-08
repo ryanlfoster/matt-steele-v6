@@ -1,0 +1,99 @@
+<div id="primary_content">
+	<div class="wrapper main">
+	
+	<div class="intro-wrapper clearfix">
+	<div class="left size1of2">
+		<div class="intro-copy">
+		
+{{ entries:listing }}
+	
+	{{ intro_content }}
+	
+{{ /entries:listing }}
+				
+		</div> <!--/ intro-copy-->
+	</div> <!--/ left size1of2-->
+
+		<div class="right size1of2">
+{{ intro_image_loop}}
+
+	      <img class="intro-photo" 
+	      src="{{ transform 
+	      src="{{ intro_image }}"
+				width="463"
+				height="509"
+				action="smart"
+				}}" alt="{{ intro_image_alt_title }}"/>		
+	
+{{ /intro_image_loop }}
+
+		</div> <!--/ right-->
+			</div> <!--/ intro-wrapper clearfix-->
+	</div> <!--/ wrapper main-->
+	
+
+{{ theme:partial src="_social_section" }}
+
+	
+	<div class="home-blog-section section-line group" id="blog-section">
+		<div class="wrapper main">
+			<h2 class="home-section-title">Blog <span class="red">//</span></h2>
+			
+
+{{ entries:listing 
+	show_future="yes" 
+	folder="blog" 
+	limit="1"
+}}
+
+<h2 class="home-blog-title"><a href="{{url}}">{{title}}</a></h2>
+<h4 class="blog-post-date"><i>{{date}}</i></h4>
+{{ truncate:words limit="300" ending="" }} 
+
+{ blog_content }
+
+{{ /truncate:words }}
+
+<p class="continue-reading"><a href="{{url}}">Continue >></a></p>
+
+{{ /entries:listing }}				
+	</div> <!--/ wrapper main-->		
+</div> <!--/ home-blog-section section-line-->
+	
+	<div class="home-recent-articles-section section-line group" id="recent-articles-section">
+		<div class="wrapper main">
+		
+		<h2 class="home-section-title">Recent Articles <span class="red">//</span></h2>
+			
+			
+{{ entries:listing 
+	show_future="yes" 
+	folder="blog" 	
+	limit="3"
+	offset="1"
+}}
+<div class="home-articles-three-up">
+<a href="{{url}}">
+<div class="{{ switch between="home-articles-three-up-padder-one|home-articles-three-up-padder-two|home-articles-three-up-padder-three" }}">
+				
+			<h2>{{title}}</h2>
+			{{ truncate:words limit="40" ending="" }} 
+			{ blog_content }
+			{{ /truncate:words }}
+		
+
+			</div> <!--/ home-articles-three-up-padder-->
+		</a>
+	</div> <!--/ home-articles-three-up-->
+	{{ /entries:listing }}	
+				
+						</div> <!--/ wrapper main-->
+	</div> <!-- home-recent-articles-section section-line-->
+				
+{{ theme:partial src="_recent_work_section" }}
+	
+
+	
+	  {{ theme:partial src="_contact_section" }}
+
+	</div> <!--/ primary_content-->

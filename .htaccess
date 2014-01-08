@@ -1,0 +1,31 @@
+# Kick off base settings
+RewriteEngine On
+RewriteBase /
+DirectorySlash Off
+
+# Protect your system files
+RewriteRule ^(.+?)/single/(.*)$ /$1/$2 [L,NC,R=301] 
+RewriteRule ^(_app) - [F,L]
+RewriteRule ^(_config) - [F,L]
+RewriteRule ^(_content) - [F,L]
+RewriteRule ^(_logs) - [F,L]
+RewriteRule (layouts) - [F,L]
+RewriteRule (templates) - [F,L]
+RewriteRule (partials) - [F,L]
+RewriteRule ^(.*)?\.yml$ - [F,L]
+Rewriterule ^(.*)?\.yaml$ - [F,L]
+RewriteRule ^(.*/)?\.git+ - [F,L]
+
+
+# Change file upload size limit
+php_value upload_max_filesize 25M
+php_value post_max_size 25M
+php_value memory_limit 128M
+
+# Remove trailing slashes
+RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301,L]
+
+# Remove index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [QSA,L]

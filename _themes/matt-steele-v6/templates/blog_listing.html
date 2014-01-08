@@ -1,0 +1,13 @@
+<section role="main">
+
+  <h2>{{ title }}</h2>
+
+  {{ content }}
+</section><!-- END role="main" -->
+
+<section class="articles">
+
+<h1>output by blog_listing.html</h1>
+
+{{ theme:partial src="_article_listing" fold="{blog_name}" lim="5" tax="no" }}
+</section>
