@@ -11,8 +11,8 @@ theme_name: Matt Steele v6
 #tag_line: "A bare-bones Statamic theme"
 
 # Comments + Disqus
-disqus_account: changeme
-show_comments: no
+disqus_account: mattsteele
+show_comments: yes
 
 # Blog
 blog_name: blog

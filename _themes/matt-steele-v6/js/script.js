@@ -77,7 +77,6 @@ $("#intro-contact-clicker").click(function() {
 });
 
 
-
 // scroll up effect for the 'return to top' link in the footer
 
 $(document).ready(function() {		

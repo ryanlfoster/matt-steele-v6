@@ -2,33 +2,7 @@
 	<div class="wrapper main">
 	
 		<h2 class="home-section-title">Contact <span class="red">//</span></h2>
-	{{ if raven:success }}
-		<h1>BOOM BABY!</h1>
-	{{ endif }}
-	{{ if ! raven:success }}					
-		
-				{{ raven:errors }}
-				<div class="pal mvl mll red-background">
-				<h1 class="text-error pbn">It looks like you have some errors</h1>
-				<p class="text-error ptn">(annoying, I know)</p>
-				<p class="text-error">Your first name, last name, email address and a message are all required.</p>
-				<hr/>
-				<p class="text-error">Fix the following errors and then try re-sending your message:</p>				
-				
-						{{ missing }}
-							<p class="text-error">This field must have content: {{ field }}</p>
-						{{ /missing }}
-						
-						{{ invalid }}
-							<p class="text-error">This field has an invalid format: {{ field }}: {{ message }}</p>
-						{{ /invalid }}		
-						
-							
-				</div> <!--/ pal mvl background-white -->
-				{{ /raven:errors }}
-
-		{{ endif }}		
-
+{{ theme:partial src="_raven_errors" }}
 
 	{{ raven:form formset="contact_form" }}
 		

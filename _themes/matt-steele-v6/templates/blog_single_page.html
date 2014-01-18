@@ -7,34 +7,35 @@
 			
 			<div class="right interior-right-size">
 			<h2 class="home-section-title">Blog <span class="red">//</span></h2>
-{{ entries:listing 
-	show_future="yes" 
-	folder="blog" 
-	limit="1"
-}}
-			<div class="blog-single-wrapper group">
-			
-			<h2 class="blog-single-title"><a href="{{ rul }}">{{ title }}</a></h2>
+
+
+		<div class="blog-single-wrapper group mbl">			
+			<h2 class="blog-single-title">{{ title }}</a></h2>
 			<h4 class="blog-post-date"><i>{{ date }}</i></h4>
 			
-{{ blog_content }}
-	{{ /entries:listing }}	
+			{{ blog_content }}
+			
+	
 </div> <!--/ blog-single-wrapper group-->
+
+		<h3>Leave Your Comments</h3>
+
+	{{ disqus:comments account="{ disqus_account }" }}
 
 			</div> <!--/ right interior-single-page-->
 			
-			<div class="left interior-left-size">
+		<div class="left interior-left-size">
 			
 			<h2 class="blog-sidebar-title">Recent Articles</h2>
-		<ul class="blog-side-nav">
-			{{ entries:listing 
-				show_future="yes" 
-				folder="blog" 
-				limit="15"
-			}}
-				<li><a href="{{ url }}">{{ title }}</a></li>
-			{{ /entries:listing }}
-		</ul>
+			<ul class="blog-side-nav">
+				{{ entries:listing 
+					show_future="yes" 
+					folder="blog" 
+					limit="15"
+				}}
+					<li><a href="{{ url }}l">{{ title }}</a></li>
+				{{ /entries:listing }}
+			</ul>
 			
 	{{#		
 		Turning this off for now until there's a better solution
@@ -56,7 +57,8 @@
 					<li><a href="">December 2013</a></li>
 				</ul>
 				#}}
-			</div>
+			</div> <!--/ left interior-left-size-->			
+	
 	</div> <!--/ wrapper main-->	
 			
 </div> <!--/ blog-single-section section-line-->
@@ -66,7 +68,7 @@
 	{{ theme:partial src="_social_section" }}
 	
 	{{ theme:partial src="_contact_section" }}
-	</div> <!--/ main-->
+</div> <!--/ main-->
 
 {{# 
 ====================================

@@ -47,6 +47,25 @@ nav ul, nav ol, ul, ol {list-style: none; list-style-image: none;}
 
 * {-webkit-text-size-adjust: none;}
 
+
+/* ----- PDF -------*/
+
+a[href $='.pdf'] {
+	background-image: url(../img/icon_pdf.gif);
+	padding-left: 28px;
+	padding-bottom: 1px;
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.language-css{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #000;
+	background-color: #507796;
+	background-color: rgba(80, 119, 150, 0.4);
+	padding: 5px 10px;	
+}
+
 /* ----- blockquotes -------*/
 
 blockquote{
@@ -884,6 +903,22 @@ nav ul {padding: 0;}
 .home-contact-section{
 	padding: 20px 0;
 }
+
+.form-success{
+	background-color: #FFCC66;
+	color: #fff;
+	width: 92.5%;
+	margin: 10px 0;
+	border: 5px solid green;
+	padding: 10px;
+}
+
+.form-errors{
+	background-color: #D1625B;
+	color: #fff;
+	width: 89.5%;
+}
+
 .text-error{
 	color: #ffffff;
 }
@@ -1315,7 +1350,11 @@ html[xmlns] .slides {display: block;}
 	#primary-nav > ul > li:nth-of-type(odd):hover {
 		border-bottom: 3px solid #fff;
 	}
-
+	
+	#primary-nav > ul > li.active-nav {
+		border-bottom: 3px solid #fff;
+	}
+	
 	#primary-nav ul li a {display: block; padding: 0;}
 
 	#primary-nav > ul > li:hover{

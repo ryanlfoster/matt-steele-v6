@@ -3,8 +3,10 @@ RewriteEngine On
 RewriteBase /
 DirectorySlash Off
 
+# Redirect to remove /single/ from the old URL
+RewriteRule ^(.+?)/single/(.*)$ /$1/$2 [L,NC,R=301]
+
 # Protect your system files
-RewriteRule ^(.+?)/single/(.*)$ /$1/$2 [L,NC,R=301] 
 RewriteRule ^(_app) - [F,L]
 RewriteRule ^(_config) - [F,L]
 RewriteRule ^(_content) - [F,L]

@@ -28,7 +28,7 @@ blog_content: |
   
   <p>On the radio were news reports about people protesting their wages at fast food restaurants. I understand where they&#39;re coming from I guess, but I&#39;ve always felt that anyone with a cheap computer and a diligent plan can make some money in this world.</p>
   
-  <p><img alt="" src="http://matt-steele.dev/assets/img/blog/eeyore1.jpg" style="height:205px; width:246px" /></p>
+  <p><img alt="" src="http://matt-steele.com/assets/img/blog/eeyore.jpg" style="height:205px; width:246px" /></p>
   
   <p>I&#39;m seeing a lot of new developers join <a href="http://www.meetup.com/Denver-Code-Club/">my Meetup</a> and they remind me of myself just a few short years ago. These people will absolutely make it in this world. They&#39;ll make it because they&#39;re spending their valuable Saturday mornings learning to write code. They saved up enough money to buy a laptop and they&#39;re on their way. They&#39;ll never work the protest line at a fast food restaurant.</p>
   
@@ -42,11 +42,11 @@ blog_content: |
   
   <h2>Use a Timer</h2>
   
-  <p>I personally need this. This method keeps me on task and lets me know how long it takes me to get things done. I learn a minimum of 20hours/wk after my day job. <strong>On the clock&nbsp;</strong>20 hours. If I stop to check Twitter or the news or whatever, then I stop the timer. It&#39;s easy to get distracted by other things that aren&#39;t your focus. Your focus is on web development,&nbsp;everything else is noise. <a href="https://www.toggl.com/">Here&#39;s</a> a free timer.</p>
+  <p>I personally need this. This method keeps me on task and lets me know how long it takes me to get things done. I learn a minimum of 20 hours/wk after my day job. <strong>On the clock&nbsp;</strong>20 hours. If I stop to check Twitter or the news or whatever, then I stop the timer. It&#39;s easy to get distracted by other things that aren&#39;t your focus. Your focus is on web development,&nbsp;everything else is noise. <a href="https://www.toggl.com/">Here&#39;s</a> a free timer.</p>
   
   <h2>Start a Meetup</h2>
   
-  <p>Want to learn to code and live in a moderately-sized metro area? Start a Meetup. I found 53 people who wanted to learn JS with me on Saturday mornings. A study group will keep you motivated and involved. Plus you&#39;ll meet a ton of people in your same exact shoes. Don&#39;t sit on the sidelines waiting for someone else to start one.</p>
+  <p>Want to learn to code and live in a moderately-sized metro area? Start a Meetup. I found <strike>53</strike> <strike>81</strike> 95 people who wanted to learn JS with me on Saturday mornings. A study group will keep you motivated and involved. Plus you&#39;ll meet a ton of people in your same exact shoes. Don&#39;t sit on the sidelines waiting for someone else to start one.</p>
   
   <h2>Be Pragmatic</h2>
   
@@ -84,6 +84,10 @@ blog_content: |
   
   <p>P.s. If you&#39;re looking for more info on specific steps it takes to become a developer, I highly recommend &quot;<a href="http://joshuakemp.blogspot.com/">No Degree, No Problem</a>&quot; by Josh Kemp. He comes from the backend developer point of view, but it&#39;s absolutely a great roadmap for any type of developer to follow.</p>
 ---
+
+
+
+
 
 
 

@@ -5,7 +5,11 @@ include:
 fields:
   blog_content: 
    display: Blog Content 
-   type: ckeditor 
+   type: ckeditor
+   
+  status:
+    display: Status
+    type: status 
 
 ### This will cancel out the default content field from displaying, 
 ### thus allowing me to reorder the fields

@@ -5,7 +5,7 @@
 	{{ recent_work_loop limit="3" }}
 		<div class="home-work-three-up">
 			<div class="{{ switch between="home-work-three-up-padder-one|home-work-three-up-padder-two|home-work-three-up-padder-three" }}">
-				<a href="">
+				<a href="{{ recent_work_link }}">
 					<h2>{{ recent_work_image_title }}</h2>
 <img src="{{ recent_work_image }}" alt="{{ recent_work_image_alt_title }}" />
 					</a>

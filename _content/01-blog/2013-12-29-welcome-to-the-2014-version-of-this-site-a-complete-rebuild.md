@@ -14,7 +14,7 @@ blog_content: |
   
   <h3>New Code</h3>
   
-  <p>One of the most important things I&#39;ve learned since the last build is how important a strong foundation is for a site is. This time around I started with a <a href="http://matt-steele.dev/styleguide">styleguide</a> and built up from there. In the previous version I found myself doing a lot of &#39;patching&#39;. A style would come up that I hadn&#39;t prepared ahead for and I would need to get into the code and patch it up. Not so on this version; this version has strong &#39;bones&#39;. I think I could throw anything at it at this point. Being able to plan ahead just comes with experience.</p>
+  <p>One of the most important things I&#39;ve learned since the last build is how important a strong foundation is for a site is. This time around I started with a <a href="http://matt-steele.com/styleguide">styleguide</a> and built up from there. In the previous version I found myself doing a lot of &#39;patching&#39;. A style would come up that I hadn&#39;t prepared ahead for and I would need to get into the code and patch it up. Not so on this version; this version has strong &#39;bones&#39;. I think I could throw anything at it at this point. Being able to plan ahead just comes with experience.</p>
   
   <h3>New CMS</h3>
   
@@ -24,14 +24,11 @@ blog_content: |
   
   <h3>Design</h3>
   
-  <p>The previous design wasn&#39;t bad at all, but after 14 months of looking at it, I was starting to want to see something different. This will likely happen all over again next year. For reference of what v5 looked like see the <a href="http://matt-steele.dev/colophon">colophon</a>. The updates on this version include a red, white and blue color palette, larger text, and updated profile info. Overall, it does a better job letting people know who I am and what I do.</p>
+  <p>The previous design wasn&#39;t bad at all, but after 14 months of looking at it, I was starting to want to see something different. This will likely happen all over again next year. For reference of what v5 looked like see the <a href="http://matt-steele.com/colophon">colophon</a>. The updates on this version include a red, white and blue color palette, larger text, and updated profile info. Overall, it does a better job letting people know who I am and what I do.</p>
   
   <h2>Wrap up</h2>
   
   <p>It always feels good to get a new site released, but even more so when it&#39;s your own. This is a fresh start from the ground up so, as always, if you run into something weird please do me a favor and shoot me an email. It&#39;s much appreciated. Here&#39;s to 2014!</p>
 ---
-
-
-
 
 

@@ -17,27 +17,26 @@ CKEDITOR.config.contentsCss="/_add-ons/ckeditor/css/contents.css";
          { name: 'Heading 4', element: 'h4' },
          { name: 'Heading 5', element: 'h5' },
          { name: 'Heading 6', element: 'h6' },
-        // { name: 'CSS code', element: 'pre', attributes: { 'class': 'language-css' } },
-         //{ name: 'HTML code', element: 'pre', attributes: { 'class': 'language-markup' } }
+				 { name: 'CSS code', element: 'pre', attributes: { 'class': 'language-css' } },
+         { name: 'HTML code', element: 'pre', attributes: { 'class': 'language-markup' } }
      ]);
 
 // Define changes to default configuration here
 CKEDITOR.editorConfig = function( config ) {
   // toolbar customisations
     // use custom styles dropdown - see above from line 10
-        config.stylesSet = 'my_styles';
+        config.stylesSet = 'my_styles';        
     // force plain text on paste
         //config.forcePasteAsPlainText = true;
     // example of a custom toolbar - to see all available toolbar buttons see http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Toolbar
           config.toolbar = [
              { name: 'styles', items : [ 'Styles' ] },
              { name: 'removeformat', items : [ 'RemoveFormat' ] },
-             { name: 'basics', items : [ 'Bold','Italic',/* 'Strike', *//* 'Subscript', *//* 'Superscript' */ ] },
-             { name: 'paragraph', items : [ 'NumberedList','BulletedList',/* '-', *//* 'Outdent', *//* 'Indent', *//* '-', *//* 'Blockquote', */
-             /* 'CreateDiv', *//* '-', */'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-'/* ,'BidiLtr','BidiRtl' */ ] },
-             //{ name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Blockquote'] },
+             { name: 'basics', items : [ 'Bold','Italic', 'Strike', 'Subscript', 'Superscript' ] },
+             { name: 'paragraph', items : [ 'NumberedList','BulletedList'/*, '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' */ ] },
+             { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Blockquote'] },
              { name: 'links', items : [ 'Link','Unlink'/* ,'Anchor' */ ] },
-             //{ name: 'styles', items : [ /* 'Styles', */'Format'/* 'Font','FontSize' */ ] },
+             { name: 'styles', items : [  'Styles','Format'/* 'Font'*/, 'FontSize' ] },
              { name: 'insert', items : [ 'Image' ] },    
              { name: 'tools', items : [ 'Source', '-', 'Maximize', '-' ] }
          ];

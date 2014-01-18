@@ -37,11 +37,8 @@ blog_content: |
   <p>If you&#39;re trying to learn Javascript, this book is my recommendation to start with. Maybe you won&#39;t get it here. That&#39;s ok though, keep trying other books, I certainly did. Once you find the teacher who&#39;s voice you understand, you&#39;ll start to get it, I promise.</p>
   
   <p>Yesterday, Rachel Nabors posted an <a href="http://www.rachelnabors.com/2013/01/javascript-study-for-designers/">article</a> that I agreed with from top to bottom and sounded a lot like the path I&#39;ve been on. Reading that is what prompted me to write this, so please follow the link and check out her post as well (thank you, Rachel).</p>
-  
-  <p>&nbsp;</p>
-  
-  <p>Reenactment of me figuring out Javascript. Instead of &quot;Merry Christmas&quot; though, I was saying &quot;I get Javascript, <a href="http://en.wikipedia.org/wiki/Douglas_Crockford">Mr. Crockford</a>! , I get Javascript, <a href="http://codylindley.com/">Mr. Lindley</a>!&quot;.</p>
 ---
+
 
 
 

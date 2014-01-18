@@ -13,7 +13,7 @@
 ###########################################################################################
 
 # Enter your license key
-_license_key:
+_license_key: f2d74307-85a1-40ca-8f15-e3aaf0738c2d
 
 _language: en
 
@@ -27,7 +27,7 @@ _site_name: Matt Steele
 _content_root: _content
 
 # Used for permalinks
-_site_url: http://matt-steele.dev/
+_site_url: http://matt-steele.com
 
 # Folder name of your desired theme
 _theme: matt-steele-v6
@@ -42,7 +42,7 @@ _date_format: 'F jS, Y'
 _time_format: 'g:i.s a'
 
 # Timezone
-_timezone: America/New_York
+_timezone: America/Denver
 
 # List of desired taxonomy triggers
 _taxonomy:

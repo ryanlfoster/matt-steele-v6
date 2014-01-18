@@ -39,17 +39,22 @@ fields:
        type: file
        allowed: [png, gif, jpg, jpeg]
        destination: assets/img/recent_work
-       width: 33%
+       width: 25%
      recent_work_image_title:
        display: Recent Work Titles
        instructions: Displays on the page
        type: text
-       width: 33%
+       width: 25%
+     recent_work_link:
+       display: Recent Work Links
+       instructions: Link to the external site
+       type: text
+       width: 25%
      recent_work_image_alt_title:
        display: Recent Work Image Alt Titles
        instructions: (for screen readers)
        type: text
-       width: 33%
+       width: 25%
 
 ### This will cancel out the default content field from displaying, 
 ### thus allowing me to reorder the fields
