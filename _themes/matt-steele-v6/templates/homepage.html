@@ -73,17 +73,16 @@
 	offset="1"
 }}
 <div class="home-articles-three-up">
-<a href="{{url}}">
+
 <div class="{{ switch between="home-articles-three-up-padder-one|home-articles-three-up-padder-two|home-articles-three-up-padder-three" }}">
-				
-			<h2>{{title}}</h2>
+			<a href="{{url}}"><h2>{{title}}</h2></a>
 			{{ truncate:words limit="40" ending="" }} 
 			{ blog_content }
 			{{ /truncate:words }}
 		
 
 			</div> <!--/ home-articles-three-up-padder-->
-		</a>
+		
 	</div> <!--/ home-articles-three-up-->
 	{{ /entries:listing }}	
 				
