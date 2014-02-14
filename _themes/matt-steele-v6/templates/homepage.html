@@ -75,16 +75,17 @@
 <div class="home-articles-three-up">
 
 <div class="{{ switch between="home-articles-three-up-padder-one|home-articles-three-up-padder-two|home-articles-three-up-padder-three" }}">
-			<a href="{{url}}"><h2>{{title}}</h2></a>
-			{{ truncate:words limit="40" ending="" }} 
-			{ blog_content }
-			{{ /truncate:words }}
-		
 
-			</div> <!--/ home-articles-three-up-padder-->
-		
-	</div> <!--/ home-articles-three-up-->
-	{{ /entries:listing }}	
+	<a href="{{url}}"><h2>{{title}}</h2></a>
+	
+	{{ truncate:words limit="40" ending="" }} 
+	{ blog_content }
+	{{ /truncate:words }}		
+
+	</div> <!--/ home-articles-three-up-padder-->
+
+</div> <!--/ home-articles-three-up-->
+{{ /entries:listing }}	
 				
 						</div> <!--/ wrapper main-->
 	</div> <!-- home-recent-articles-section section-line-->

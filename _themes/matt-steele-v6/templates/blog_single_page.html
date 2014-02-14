@@ -27,15 +27,15 @@
 		<div class="left interior-left-size">
 			
 			<h2 class="blog-sidebar-title">Recent Articles</h2>
-			<ul class="blog-side-nav">
-				{{ entries:listing 
-					show_future="yes" 
-					folder="blog" 
-					limit="15"
-				}}
-					<li><a href="{{ url }}l">{{ title }}</a></li>
-				{{ /entries:listing }}
-			</ul>
+		<ul class="blog-side-nav">
+			{{ entries:listing 
+				show_future="yes" 
+				folder="blog" 
+				limit="20"
+			}}
+				<li><a href="{{ url }}">{{ title }}</a></li>
+			{{ /entries:listing }}
+		</ul>
 			
 	{{#		
 		Turning this off for now until there's a better solution

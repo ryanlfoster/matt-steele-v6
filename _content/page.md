@@ -23,24 +23,26 @@ intro_content: |
 social_links_loop: ""
 recent_work_loop:
   - 
-    recent_work_image: >
-      /assets/img/recent_work/codescouts-300x213.png
     recent_work_image_title: Code Scouts
     recent_work_link: http://codescouts.net/
     recent_work_image_alt_title: Code Scouts
-  - 
     recent_work_image: >
-      /assets/img/recent_work/big-bas-300x213.png
+      /assets/img/recent_work/codescouts-302x212.jpg
+  - 
     recent_work_image_title: Boulder Astronomical Society
     recent_work_link: http://www.boulderastronomy.com/
     recent_work_image_alt_title: Boulder Astronomical Society
-  - 
     recent_work_image: >
-      /assets/img/recent_work/big-camp-300x206.png
+      /assets/img/recent_work/big-bas-300x213.jpg
+  - 
     recent_work_image_title: Camp!
     recent_work_link: http://camp-supply.com/
     recent_work_image_alt_title: Camp!
+    recent_work_image: >
+      /assets/img/recent_work/big-camp-300x206.jpg
 ---
+
+
 
 
 

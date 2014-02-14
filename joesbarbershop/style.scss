@@ -1,0 +1,511 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu,  section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ------------ Make images responsive ------------ */
+
+img {
+	max-width: 100%;
+}
+
+ /* -------------- Fix the box model -------------- */
+* {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+   -ms-box-sizing:     border-box;
+    box-sizing:        border-box;
+}
+
+
+ /* -------------- Load up the sweet fonts -------------- */
+
+
+@font-face {
+	font-family: 'FranchiseRegular';
+	src: url('../fonts/franchise-bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../fonts/franchise-bold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('../fonts/franchise-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../fonts/franchise-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* -------------- Structural Styles -------------- */
+
+.center-div {
+	width: 80%;
+ 	margin: 0 auto;
+ 	max-width: 1024px;
+ }
+ #wrapper{
+ 	position: relative;
+ }
+ html{
+ 	height: 100%;
+ }
+
+ /* -------------- Nav Styles -------------- */
+
+ .persistent-nav{
+ 	top: 0;
+  left: 0;
+ 	position: fixed;
+ 	width: 100%;
+ 	background-color: #6b7684;
+ 	z-index: 1;
+ 	height: 80px;
+ 	overflow: hidden;
+ }
+
+.persistent-nav ul{
+	height: 80px;
+	font-size: 1.4em;
+}
+
+.persistent-nav ul li{
+	float: left;
+	padding: 2px;
+	margin: 35px 0 0 10%;
+	font-family: "FranchiseRegular";
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 1px #000;
+	font-style: italic;
+}
+
+.persistent-nav ul li:nth-of-type(1){
+	margin-left: 17%;
+}
+
+
+.persistent-nav ul li a{
+  text-decoration: none;
+	color: #f0f8f1;
+}
+
+.persistent-nav ul li a:hover, .persistent-nav ul li a:focus{
+	color: white;
+	background-color: #595651;
+	background-color: rgba(89,86,81,0.9);
+	padding: 2px;
+	border-radius: 3px;
+}
+
+/* -------------- Temp Nav Styles -------------- */
+
+
+
+
+.persistent-nav ul li a:active {
+	border-bottom-color: #CCC;
+	border-top-color: #999;
+	// -webkit-box-shadow: inset 0 1px 2px #aaa;
+	// -moz-box-shadow:    inset 0 1px 2px #aaa;
+	// box-shadow:         inset 0 1px 2px #aaa;
+}
+/* -------------- End Temp Nav Styles -------------- */
+
+header{
+	clear: both;
+	padding-top: 20px;
+	margin-top: 64px;
+}
+
+/* -------------- Top section Styles -------------- */
+
+.left-head{
+	margin-right: 7%;
+	height: auto;
+	width: 18%;
+	float: left;
+	margin-top: 2%;
+}
+
+.right-head{
+	width: 18%;
+	margin-left: 4%;
+	height: auto;
+}
+
+header{
+	background-color: #f1eee8;
+}
+
+.top-section{
+	background-color: #f1eee8;
+	height: auto;
+}
+
+.title{
+	width: 50%;
+}
+
+.title-text{
+	text-indent: -99999;
+	display: none;
+}
+
+.subtitle-text{
+	text-indent: -99999;
+	display: none;
+}
+
+.main-pic-respond{
+	width: 99%;
+}
+
+.photo-center{
+	margin: 30px 0 50px 0;
+}
+
+/* -------------- About section Styles -------------- */
+
+
+.about-section{
+	background-color: #6c9aaf;
+	height: auto;
+	overflow: hidden;
+}
+
+.about-header{
+	text-align: center;
+	font-family: "corner-store";
+	color: #f0f8f1;
+	font-size: 2.5em;
+	padding: 65px 0 2% 0;
+	text-shadow: 3px 3px 2px #486573;
+	letter-spacing: 2px;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.about-right{
+	float: right;
+	width: 50%;
+	color: #f0f8f1;
+	font-family: "museo-sans";
+	font-size: 1.2em;
+	letter-spacing: 1.5px;
+	padding-bottom: 20px;
+}
+
+.left-scissors{
+	float: left;
+	margin: 50px 0 0 -7%;
+	width: 9%;
+}
+
+.right-scissors{
+	float: right;
+	margin: -134px -9% 0 0;
+	width: 9%;
+}
+.about-right p{
+	margin-bottom: 10px;
+}
+
+.doorway-man{
+  padding:4px;
+  border:2px solid #021a40;
+  background-color: #6c9aaf;
+  width: 45%;
+  margin-bottom: 50px;
+}
+
+/* -------------- Cuts section Styles -------------- */
+
+.cuts-section{
+	clear: both;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #b4544a;
+	background-size: 100%;
+}
+
+.cuts-header{
+	font-family: "corner-store";
+	color: #f0f8f1;
+	font-size: 3em;
+	padding: 65px 0 5% 0;
+	text-shadow: 3px 3px 2px #486573;
+	letter-spacing: 2px;
+}
+
+.accent{
+	position: absolute;
+	top: 40px;
+	left: 17%;
+}
+
+table { 
+	float: left;
+	color: #f0f8f1;
+	font-family: "FranchiseRegular";
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	padding-top: 5%;
+	width: 45%;
+	border-collapse: collapse; 
+	text-shadow: 2px 2px 2px #486573;
+	  margin-bottom: 50px;
+}
+
+td, th { 
+	padding: 6px; 
+	text-align: left; 
+}
+
+td:nth-of-type(2),td:nth-of-type(3){
+	text-align: center;
+}
+
+tr:nth-of-type(7){
+	font-size: .7em;
+}
+
+.outdoor-shot{
+	 padding:4px;
+   border:2px solid #021a40;
+   background-color: #b4544a;
+   width: 50%;
+   margin-left: 5%;
+   margin-bottom: 50px;
+}
+
+/* -------------- Contact section Styles -------------- */
+
+.contact-section{
+	clear: both;
+  background-color: #bdb4a3;	
+  color: #41353b;
+  padding-top: 65px;
+  height: auto;
+	overflow: hidden;
+}
+
+.contact-right{
+	float: right;
+	width: 45%;
+	font-family: "FranchiseRegular";
+	font-size: 1.2em;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.contact-right p{
+	font-size: 1.6em;
+}
+
+.contact-right p:nth-of-type(1){
+	margin-bottom: 5px;
+}
+
+.contact-right h3:nth-of-type(1){
+	margin: 30px 0 10px 0;
+	font-size: 2.2em;
+}
+
+.contact-right h3{
+	padding: 10px;
+}
+
+.contact-right h3{
+	font-size: 1.6em;
+}
+
+.contact-right h3:nth-of-type(4){
+	margin-top: 20px;
+}
+
+.contact-left{
+	width: 50%;
+	float: left;
+	margin-bottom: 50px;
+}
+
+iframe {
+	min-height: 500px;
+
+	width: 100%;
+	max-width: 100%;
+	padding: 4px;
+	border: 2px solid #021A40;
+	background-color: #BDB4A3;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+ 	width: 100%;
+ 	height: 50px;
+ 	background-color: #6b7684;
+ 	padding-top: 20px;
+ 	font-size: 1.1em;
+ 	color: #f0f8f1;
+	font-family: "museo-sans";
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px #000;
+	font-style: italic;
+ }
+
+footer a{
+ 	color: #f0f8f1;
+ } 
+
+footer a:hover{
+ 	color: #cb5432;
+ } 
+
+.forward-space {
+  color: #cb5432; 
+}
+
+
+ /* -------------- Smaller screens -------------- */
+@media only screen and (max-width: 665px) {
+
+	.center-div {
+		width: 85%;
+ }
+
+ 	.persistent-nav{
+		height: 38px;
+	}
+
+	.persistent-nav ul{
+		font-size: .9em;
+	}
+
+	.persistent-nav ul li{
+		margin: 10px 0 0 2%;	
+	}
+
+	.persistent-nav ul li:nth-of-type(1){
+		margin-left: 3%;
+	}
+
+	header {
+		padding-top: 10px;
+		margin-top: 38px;
+	}
+
+	.photo-center {
+		margin: 10px 0;
+	}
+
+	.about-header {
+		font-size: 1.1em;
+		padding-top: 20px;
+		margin-bottom: 15px;
+	}
+
+	.right-scissors, .left-scissors {
+		display: none;
+	}
+
+	.doorway-man{
+	  width: 100%;
+	  margin-bottom: 10px;
+	}
+
+	.about-right {
+		width: 100%;
+		font-size: 1em;
+		padding-bottom: 10px;
+	}
+
+	.cuts-header {
+		font-size: 2em;
+		padding: 30px 0 0 0;
+	}
+
+	.accent {
+		top: 18px;
+		left: 27%;
+		width: 8%;
+	}
+
+	table{
+		width: 100%;
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+
+	.outdoor-shot {
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 15px;
+	}
+
+	.contact-section {
+		padding-top: 30px;
+	}
+
+	.contact-left {
+		width: 100%;	
+		margin-bottom: 15px;
+	}
+
+	.contact-right {
+		width: 100%;
+		font-size: .7em;
+		margin-bottom: 15px;
+	}
+
+	.contact-right h3:nth-of-type(1) {
+		margin: 0px;
+	}
+
+	.contact-right h3 {
+		padding: 5px;
+	}
+
+	.contact-right h3:nth-of-type(4) {
+		margin-top: 5px;
+	}
+
+	footer{
+		padding-top: 15px;
+		font-size: 1em;
+	}
+
+}

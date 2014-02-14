@@ -4,8 +4,10 @@
 			<ul>
         <li {{ if segment_1=="" }} class="active-nav"{{ endif }}><a href="{{ homepage }}">Home</a></li>
         <li> // </li>
+<!--
 				<li><a id="work-clicker" href="{{ current_url }}#work-section">Work</a></li>
         <li> // </li>
+-->
         <li {{ if segment_1=="blog" }} class="active-nav"{{ endif }} ><a href="/blog">Blog</a></li>
         <li> // </li>
         <li><a id="contact-clicker" href="{{ current_url }}#contact-section">Contact</a></li>
@@ -19,8 +21,10 @@
 			<ul>
         <li {{ if segment_1=="" }} class="active-nav"{{ endif }}><a href="{{ homepage }}">Home</a></li>
         <li> // </li>
-				<li><a id="work-clicker" href="{{ homepage }}#work-section">Work</a></li>
+				<!--
+<li><a id="work-clicker" href="{{ homepage }}#work-section">Work</a></li>
         <li> // </li>
+-->
         <li {{ if segment_1=="blog" }} class="active-nav"{{ endif }}><a href="/blog">Blog</a></li>
         <li> // </li>
         <li><a id="contact-clicker" href="{{ current_url }}#contact-section">Contact</a></li>

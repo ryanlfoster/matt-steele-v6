@@ -1,0 +1,488 @@
+/* line 12, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 21, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+body {
+  line-height: 1;
+  height: 100%; }
+
+/* line 26, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 30, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 35, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 40, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+a {
+  text-decoration: none; }
+
+/* ------------ Make images responsive ------------ */
+/* line 46, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+img {
+  max-width: 100%; }
+
+/* -------------- Fix the box model -------------- */
+/* line 51, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -------------- Load up the sweet fonts -------------- */
+@font-face {
+  font-family: 'FranchiseRegular';
+  src: url("../fonts/franchise-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/franchise-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/franchise-bold-webfont.woff") format("woff"), url("../fonts/franchise-bold-webfont.ttf") format("truetype"), url("../fonts/franchise-bold-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+/* -------------- Structural Styles -------------- */
+/* line 73, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.center-div {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1024px; }
+
+/* line 78, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+#wrapper {
+  position: relative; }
+
+/* line 81, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+html {
+  height: 100%; }
+
+/* -------------- Nav Styles -------------- */
+/* line 87, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #6b7684;
+  z-index: 1;
+  height: 80px;
+  overflow: hidden; }
+
+/* line 98, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul {
+  height: 80px;
+  font-size: 1.4em; }
+
+/* line 103, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul li {
+  float: left;
+  padding: 2px;
+  margin: 35px 0 0 10%;
+  font-family: "FranchiseRegular";
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px #000;
+  font-style: italic; }
+
+/* line 113, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul li:nth-of-type(1) {
+  margin-left: 17%; }
+
+/* line 118, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul li a {
+  text-decoration: none;
+  color: #f0f8f1; }
+
+/* line 123, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul li a:hover, .persistent-nav ul li a:focus {
+  color: white;
+  background-color: #595651;
+  background-color: rgba(89, 86, 81, 0.9);
+  padding: 2px;
+  border-radius: 3px; }
+
+/* -------------- Temp Nav Styles -------------- */
+/* line 136, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.persistent-nav ul li a:active {
+  border-bottom-color: #CCC;
+  border-top-color: #999; }
+
+/* -------------- End Temp Nav Styles -------------- */
+/* line 145, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+header {
+  clear: both;
+  padding-top: 20px;
+  margin-top: 64px; }
+
+/* -------------- Top section Styles -------------- */
+/* line 153, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.left-head {
+  margin-right: 7%;
+  height: auto;
+  width: 18%;
+  float: left;
+  margin-top: 2%; }
+
+/* line 161, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.right-head {
+  width: 18%;
+  margin-left: 4%;
+  height: auto; }
+
+/* line 167, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+header {
+  background-color: #f1eee8; }
+
+/* line 171, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.top-section {
+  background-color: #f1eee8;
+  height: auto; }
+
+/* line 176, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.title {
+  width: 50%; }
+
+/* line 180, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.title-text {
+  text-indent: -99999;
+  display: none; }
+
+/* line 185, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.subtitle-text {
+  text-indent: -99999;
+  display: none; }
+
+/* line 190, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.main-pic-respond {
+  width: 99%; }
+
+/* line 194, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.photo-center {
+  margin: 30px 0 50px 0; }
+
+/* -------------- About section Styles -------------- */
+/* line 201, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.about-section {
+  background-color: #6c9aaf;
+  height: auto;
+  overflow: hidden; }
+
+/* line 207, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.about-header {
+  text-align: center;
+  font-family: "corner-store";
+  color: #f0f8f1;
+  font-size: 2.5em;
+  padding: 65px 0 2% 0;
+  text-shadow: 3px 3px 2px #486573;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 50px; }
+
+/* line 219, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.about-right {
+  float: right;
+  width: 50%;
+  color: #f0f8f1;
+  font-family: "museo-sans";
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  padding-bottom: 20px; }
+
+/* line 229, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.left-scissors {
+  float: left;
+  margin: 50px 0 0 -7%;
+  width: 9%; }
+
+/* line 235, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.right-scissors {
+  float: right;
+  margin: -134px -9% 0 0;
+  width: 9%; }
+
+/* line 240, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.about-right p {
+  margin-bottom: 10px; }
+
+/* line 244, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.doorway-man {
+  padding: 4px;
+  border: 2px solid #021a40;
+  background-color: #6c9aaf;
+  width: 45%;
+  margin-bottom: 50px; }
+
+/* -------------- Cuts section Styles -------------- */
+/* line 254, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.cuts-section {
+  clear: both;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #b4544a;
+  background-size: 100%; }
+
+/* line 263, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.cuts-header {
+  font-family: "corner-store";
+  color: #f0f8f1;
+  font-size: 3em;
+  padding: 65px 0 5% 0;
+  text-shadow: 3px 3px 2px #486573;
+  letter-spacing: 2px; }
+
+/* line 272, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.accent {
+  position: absolute;
+  top: 40px;
+  left: 17%; }
+
+/* line 278, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+table {
+  float: left;
+  color: #f0f8f1;
+  font-family: "FranchiseRegular";
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding-top: 5%;
+  width: 45%;
+  border-collapse: collapse;
+  text-shadow: 2px 2px 2px #486573;
+  margin-bottom: 50px; }
+
+/* line 291, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+td, th {
+  padding: 6px;
+  text-align: left; }
+
+/* line 296, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+td:nth-of-type(2), td:nth-of-type(3) {
+  text-align: center; }
+
+/* line 300, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+tr:nth-of-type(7) {
+  font-size: .7em; }
+
+/* line 304, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.outdoor-shot {
+  padding: 4px;
+  border: 2px solid #021a40;
+  background-color: #b4544a;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 50px; }
+
+/* -------------- Contact section Styles -------------- */
+/* line 315, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-section {
+  clear: both;
+  background-color: #bdb4a3;
+  color: #41353b;
+  padding-top: 65px;
+  height: auto;
+  overflow: hidden; }
+
+/* line 324, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right {
+  float: right;
+  width: 45%;
+  font-family: "FranchiseRegular";
+  font-size: 1.2em;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+/* line 334, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right p {
+  font-size: 1.6em; }
+
+/* line 338, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right p:nth-of-type(1) {
+  margin-bottom: 5px; }
+
+/* line 342, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right h3:nth-of-type(1) {
+  margin: 30px 0 10px 0;
+  font-size: 2.2em; }
+
+/* line 347, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right h3 {
+  padding: 10px; }
+
+/* line 351, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right h3 {
+  font-size: 1.6em; }
+
+/* line 355, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-right h3:nth-of-type(4) {
+  margin-top: 20px; }
+
+/* line 359, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.contact-left {
+  width: 50%;
+  float: left;
+  margin-bottom: 50px; }
+
+/* line 365, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+iframe {
+  min-height: 350px;
+  width: 100%;
+  max-width: 100%;
+  padding: 4px;
+  border: 2px solid #021A40;
+  background-color: #BDB4A3; }
+
+/* line 375, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #6b7684;
+  padding-top: 20px;
+  font-size: 1.1em;
+  color: #f0f8f1;
+  font-family: "museo-sans";
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #000;
+  font-style: italic; }
+
+/* line 390, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+footer a {
+  color: #f0f8f1; }
+
+/* line 394, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+footer a:hover {
+  color: #cb5432; }
+
+/* line 398, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+.forward-space {
+  color: #cb5432; }
+
+/* -------------- Smaller screens -------------- */
+@media only screen and (max-width: 665px) {
+  /* line 406, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .center-div {
+    width: 85%; }
+
+  /* line 410, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .persistent-nav {
+    height: 38px; }
+
+  /* line 414, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .persistent-nav ul {
+    font-size: .9em; }
+
+  /* line 418, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .persistent-nav ul li {
+    margin: 10px 0 0 2%; }
+
+  /* line 422, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .persistent-nav ul li:nth-of-type(1) {
+    margin-left: 3%; }
+
+  /* line 426, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  header {
+    padding-top: 10px;
+    margin-top: 20px; }
+
+  /* line 431, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .photo-center {
+    margin: 10px 0; }
+
+  /* line 435, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .about-header {
+    font-size: 1.1em;
+    padding-top: 20px;
+    margin-bottom: 15px; }
+
+  /* line 441, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .right-scissors, .left-scissors {
+    display: none; }
+
+  /* line 445, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .doorway-man {
+    width: 100%;
+    margin-bottom: 10px; }
+
+  /* line 450, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .about-right {
+    width: 100%;
+    font-size: 1em;
+    padding-bottom: 10px; }
+
+  /* line 456, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .cuts-header {
+    font-size: 2em;
+    padding: 30px 0 0 0; }
+
+  /* line 461, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .accent {
+    top: 18px;
+    left: 27%;
+    width: 8%; }
+
+  /* line 467, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  table {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 10px; }
+
+  /* line 473, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .outdoor-shot {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 15px; }
+
+  /* line 479, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-section {
+    padding-top: 30px; }
+
+  /* line 483, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-left {
+    width: 100%;
+    margin-bottom: 15px; }
+
+  /* line 488, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-right {
+    width: 100%;
+    font-size: .7em;
+    margin-bottom: 15px; }
+
+  /* line 494, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-right h3:nth-of-type(1) {
+    margin: 0px; }
+
+  /* line 498, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-right h3 {
+    padding: 5px; }
+
+  /* line 502, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  .contact-right h3:nth-of-type(4) {
+    margin-top: 5px; }
+
+  /* line 506, /Users/mattsteele/Sites/DevBarbershop/style.scss */
+  footer {
+    padding-top: 15px;
+    font-size: 1em; } }
