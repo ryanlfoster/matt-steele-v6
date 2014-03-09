@@ -1,0 +1,15 @@
+---
+first_name: Rich
+last_name: Stewart
+company_name: TeleTech
+email: richardstewart@teletech.com
+message: |
+  Hi Matt,
+  
+  I'm a local Denver developer/ScrumMaster at TeleTech and I have been working through jQuery Hotshot on my own. I discovered your Denver Code Club when I was searching online to see if anyone else was unable to get firebug to break on code in the Chapter 2 fixed-sidebar.js file. Have you, by any chance, done this in your exploration of Chapter 2 with the club? I've just finished Chapter 2 and had no problem breaking on Chapter 1 JS code in firebug.
+  
+  I'm using Firefox v27.0.1.
+  
+  Regards,
+  Rich Stewart
+---

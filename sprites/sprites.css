@@ -1,0 +1,40 @@
+.q-logo-45x44, .github-logo-52x43, .metaq-logo-45x50, .rdio-logo-50x51, .twitter-logo-51x41, .DCC-logo-45x45{
+	background: url(sprites.png) no-repeat;
+}
+
+.q-logo-45x44{
+	background-position: -3px -3px ;
+	width: 45px;
+	height: 44px;
+}
+
+.github-logo-52x43{
+	background-position: -154px -5px ;
+	width: 52px;
+	height: 43px;
+}
+
+.metaq-logo-45x50{
+	background-position: -52px -2px ;
+	width: 45px;
+	height: 50px;
+}
+
+.rdio-logo-50x51{
+	background-position: -270px -1px ;
+	width: 50px;
+	height: 51px;
+}
+
+.twitter-logo-51x41{
+	background-position: -212px -7px ;
+	width: 51px;
+	height: 41px;
+}
+
+.DCC-logo-45x45{
+	background-position: -103px -4px ;
+	width: 45px;
+	height: 45px;
+}
+

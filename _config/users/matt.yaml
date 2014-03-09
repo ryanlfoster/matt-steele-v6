@@ -3,9 +3,8 @@ first_name: Matt
 roles:
   - admin
 password: ""
-username: matt
-password_hash: >
-  $2a$08$LMB7/FRtE5DaPi7fC6gHYOK6.XwgMY3MClL3j1ZC7Jh/Xuz.inNvy
+password_hash: $2a$08$LMB7/FRtE5DaPi7fC6gHYOK6.XwgMY3MClL3j1ZC7Jh/Xuz.inNvy
+_uid: 3v1D2P5303bf36d1a91dcswjnsc
 ---
 The username is the name of the yaml file. In this case it is "Matt".
 

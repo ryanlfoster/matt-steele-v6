@@ -7,7 +7,7 @@
   {{ endif }}
 {{ endif }}
 
-{{ if segment_1 != "404" && segment_1 != "blog" }}
+{{ if segment_1 != "404" && segment_1 != "blog" && segment_1 != ""}}
   <title>{{ if meta_title|not_empty }}{{ meta_title }}{{ else }}{{ title }}{{ endif }}{{ if get:page > 0 }} Page {{ get:page }}{{ endif }} | {{ _site_name }}</title>
   {{ if meta_desc|not_empty }}
   <meta name="description" content="{{ meta_desc|striptags }}">

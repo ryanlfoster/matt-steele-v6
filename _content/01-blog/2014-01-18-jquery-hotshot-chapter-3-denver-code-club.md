@@ -4,7 +4,6 @@ meta_title: 'jQuery Hotshot Chapter 3 - Denver Code Club'
 meta_desc: 'jQuery Hotshot Chapter 3 - Denver Code Club'
 alt_title: 'jQuery Hotshot Chapter 3 - Denver Code Club'
 blog_content: |
-  
   <p>I organize a local meetup here in Denver called the&nbsp;<a href="http://www.meetup.com/Denver-Code-Club/">Denver Code Club</a>. Each Saturday, we work through a chapter from Dan Wellman&#39;s book <a href="http://www.packtpub.com/jquery-hotshot/book">jQuery Hotshot</a>. Following each meetup, I&#39;ll write up a review here of what we learned and link the to final project. Each week is a new project and the book takes us through 10 projects in total.</p>
   
   <h2>What project did we complete in week 3?</h2>
@@ -52,6 +51,8 @@ blog_content: |
   
   <p>(As always, if you see any errors in my explanation or code above, please help me out by correcting me!)</p>
 ---
+
+
 
 
 
